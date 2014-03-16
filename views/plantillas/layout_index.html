@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ES">
+	<head>
+		<title>{{ title }}</title>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="views/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="views/css/smoothness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" media="screen">
+		<style>
+			body {
+			  /* min-height: 2000px;*/
+			  padding-top: 70px;
+			}
+      footer {
+        margin-top: 20px;
+        height: 60px;
+        background-color: #f5f5f5;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .row img{
+        padding: 5px;
+      }
+		</style>
+	</head>
+	<body style="" cz-shortcut-listen="true">
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">{{ title }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">¿Qué incluye?</h3>
+        </div>
+        <div class="panel-body">
+          <p>Lista de distribución de carpetas y librerías para la ejecución de tutoriales.</p>
+          <p>- La carpeta de cada nuevo tema o tutorial se agregará en la raíz de tutoriales2014</p>
+          <p>- En el caso de la carpeta views, se deberá agregar una carpeta con el nombre del tutorial identco al de la raíz dentro de cada sección - css, images, javascripts, otras_plantillas, plantillas - en cas de ser requeridos.</p>
+          <div class="highlight">
+            <pre><code class="bash">
+              tutoriales2014/
+              ├── includes/
+              │   ├── db_connection.inc.php
+              │   └── templateEngine.inc.php
+              ├── libs/
+              │   ├── javascript/
+              │   │   ├── jquery-validation-1.11.1/
+              │   │   ├── localization/
+              │   │   ├── additional-methods.js
+              │   │   ├── additional-methods.min.js
+              │   │   ├── bootstrap.js
+              │   │   ├── bootstrap.min.js
+              │   │   ├── jquery-1.10.2.js
+              │   │   ├── jquery-1.11.0.js
+              │   │   ├── jquery-1.11.0.min.js
+              │   │   ├── jquery-ui-1.10.4.custom.js
+              │   │   ├── jquery-ui-1.10.4.custom.min.js
+              │   │   ├── jquery.validate.js
+              │   │   └── jquery.validate.min.js
+              │   ├── php/
+              │   │   ├── phpMailer_5.2/
+              │   └── └── Twig/
+              ├── views/
+              │   ├── css/
+              │   │   ├── bootstrap/
+              │   │   ├── fonts/
+              │   │   └── smoothness/
+              │   ├── images/
+              │   │   └── ajax-loader.gif
+              │   ├── javascripts/
+              │   ├── otras_plantillas/
+              │   └── plantillas/
+              │       ├── layout_index.html
+              │       └── layout_tutos.html
+              └── index.php
+              </code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail" style="text-align:center;">
+            <img data-src="holder.js/140x140" class="img-circle img-thumbnail" alt="140x140" src="views/images/ajax-que-es.jpg" style="width: 140px; height: 140px;">
+            <div class="caption">
+              <h4>Llenar Formulario AJAX</h4>
+              <p>LLenar un formulario extrayendo los datos del servidor por medio de jQuery AJAX</p>
+              <p><a href="cargar_datos_con_ajax/" class="btn btn-primary" role="button">Ejemplo</a> <a href="#" class="btn btn-danger" role="button">Video</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>{{ footer|raw }}</footer>
+
+    </div>
+    
+    <script src="libs/javascript/jquery-1.10.2.js"></script>
+    <script src="libs/javascript/bootstrap.min.js"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+</html>
