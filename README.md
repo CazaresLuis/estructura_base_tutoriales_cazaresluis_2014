@@ -1,4 +1,4 @@
-estructura_base_tutoriales_cazaresluis_2014
+Estructura base tutoriales cazaresluis 2014
 ===========================================
 
 Estructura de carpetas y librerías para tutoriales 2014
@@ -20,7 +20,6 @@ Script SQL para creación de Base de datos mysql
 ===============================================
 -- phpMyAdmin SQL Dump
 -- version 3.5.1
--- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
 -- Tiempo de generación: 16-03-2014 a las 10:11:34
@@ -31,8 +30,9 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Base de datos: `tutos_cazaresluis_2014`
+Base de datos: `tutos_cazaresluis_2014`
 --
+
 CREATE DATABASE `tutos_cazaresluis_2014` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `tutos_cazaresluis_2014`;
 
